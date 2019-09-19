@@ -1,50 +1,107 @@
-/**\chapter{Requerimientos}
+\chapter{Requerimientos}
 
 \section{Requerimientos de interfaces externas}
+\begin{flushright}
+	
+	\begin{enumerate} [label=RF-\arabic*. , align=left]
+		\setcounter{enumi}{200}	 % Los requerimientos empiezan con el valor 200
+		\item El dispositivo debera tener conexion a internet, ya sea mediante una red Wifi o mediante el uso de datos moviles.
+		
+		\item El dispositivo tendra que tener activado el Gps para mayor facilidad de la ubicacion de mascotas.
+		\item 
+		
+		
+	\end{enumerate}
+	
+\end{flushright}
+
 
 \section{Requerimientos Funcionales}
 
-A continuación se detalla los requerimientos funcionales de la aplicación organizado por módulos
+A continuación se detalla los requerimientos funcionales de la aplicación organizado por módulos:
+
+\subsection{Creacion de Cuenta}
+\begin{table}[h!]	
+	\begin{tabular}{ |p{2cm}|p{12cm}| }	\hline
+		
+		\rowcolor{gray!50}  \textbf{No.}  &  \textbf{Descripción} \\ \hline
+		
+		RF-201&Los usuarios deberan crear su cuenta,se le pedira los siguientes requesitos: nombre, apellidos, correo electronico, direccion, edad, numero de celular.  \\	\hline
+		
+		RF-202& Por otro lado tambien podra registrarse con la autenticacion de su correo, en este caso solo completara algunos datos como direccion,numero de celular. \\ \hline
+		
+		RF-203&El usuario poodra modificar sus datos como direccion, correo electronico, edad, numero de celular.\\ \hline
+		
+		RF-204& Solo se podran registrar personas mayores a 18 años previa validacion.  \\ \hline
+		
+		
+	\end{tabular}
+\end{table}	
+
+
+
 
 \subsection{Inicio de Sesión}
-
-
 	\begin{table}[h!]	
 		\begin{tabular}{ |p{2cm}|p{12cm}| }	\hline
 			
 			\rowcolor{gray!50}  \textbf{No.}  &  \textbf{Descripción} \\ \hline
 			
-			RF-100&Los usuarios deberan tener una credencial compuesta por un id y su clave.  \\	\hline
+			RF-205&Los usuarios deberan tener una credencial compuesta por un USUARIO y su CLAVE.  \\	\hline
 			
-			RF-101&El id debera ser de 8 caracteres como máximo.  \\ \hline
+			RF-206&El clave debe ser un número de 6 digitos que debera ser cambiada cada 6 meses.  \\ \hline
 			
-			RF-102&El clave debe ser un número de 4 digitos que debera ser cambiada cada 6 meses.  \\ \hline	
+			RF-207&El usuario tendra la posibilidad de visualizar el perfil de las mascotas registradas.Tambien podra adicionar nuevas mascotas,incluso la eliminacion de los perfiles creados(mascotas).  \\ \hline
+		
+			
+			RF-207&El usuario podra cerrar sesion.  \\ \hline
+				
 		
 		\end{tabular}
 	\end{table}	
 
 
-\subsection{Registro de objetos perdidos}
+\subsection{Registro de mascotas abandonadas}
 
 \begin{flushright}
 
 	\begin{enumerate} [label=RF-\arabic*. , align=left]
 		\setcounter{enumi}{200}	 % Los requerimientos empiezan con el valor 200
-		\item 
-		Los usuarios deberán tener una credencial compuesta por un id y su clave.Los usuarios deberán tener una credencial compuesta por un id y su claveLos usuarios deberán tener una credencial compuesta por un id y su claveLos usuarios deberán tener una credencial compuesta por un id y su claveLos usuarios deberán tener una credencial compuesta por un id y su clave
-		\item  
-		El id deberá ser de 8 caracteres como máximo.
-		\item  
-		La contraseña sera de digitos que debera ser cambiada cada 3 meses.
+		\item Los usuarios podran editar el perfil de la mascota abandonada,colocando una imagen, una descripcion breve(caracteristicas de la mascota), tambien la ubicacion donde lo encontraron.
+		 
 		
-		\item \blindtext
 	\end{enumerate}
 
 \end{flushright}
+\subsection{Registro de mascotas perdidas}
 
-\subsection{Registro de usuarios}
+\begin{flushright}
+	
+	\begin{enumerate} [label=RF-\arabic*. , align=left]
+		\setcounter{enumi}{200}	 % Los requerimientos empiezan con el valor 200
+		\item Los usuarios podran editar el perfil de la mascota perdida,colocando una imagen, tamaño, raza,lugar donde se perdio, contacto.
+		
+	\end{enumerate}
+	
+\end{flushright}
 
 
 \section{Requerimientos No Funcionales}
+A continuación se detalla los requerimientos no funcionales de la aplicación:
+\begin{flushright}
+	
+	\begin{enumerate} [label=RF-\arabic*. , align=left]
+		\setcounter{enumi}{200}	 % Los requerimientos empiezan con el valor 200
+		\item La informacion manipulados por la aplicacion no deben contener informacion sensible del usuario o mascotas.
+	  
+		\item Algún tipo de transacción monetaria dentro de la aplicación que involucren al usuario.
+		 
+		\item Garantía de la información obtenida de las marcas y empresas relacionadas a la aplicación.
+		 
+		
+	\end{enumerate}
+	
+\end{flushright}
+
 
 
